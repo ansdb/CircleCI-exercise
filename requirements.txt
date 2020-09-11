@@ -1,2 +1,1 @@
 pylint
-hadolint=1.18.0
