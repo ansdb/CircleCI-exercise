@@ -11,5 +11,5 @@ COPY . app.py /app/
 # Instal packages from requirements.txt
 # hadolint ignore=DL3013
 
-COPY pip install --upgrade pip==20.2.2 &&\
+RUN pip install --upgrade pip==20.2.2 &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
